@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ------------------- GALLERY GRID ------------------- */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* Full width top */
+.parent img:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+/* Next two half width */
+.parent img:nth-child(2),
+.parent img:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* Remaining tall blocks */
+.parent img:nth-child(n+4) {
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+@media (max-width: 768px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .parent img {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* ------------------- IMAGE STYLE ------------------- */
+.galleryimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+
+    /* Hover Zoom */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: zoom-in;
+
+    /* Blur Loading */
+    filter: blur(12px);
+    opacity: 0;
+    transition: filter .6s ease-out, opacity .6s ease-out;
+}
+
+.galleryimg.loaded {
+    filter: blur(0);
+    opacity: 1;
+}
+
+/* Hover Zoom Effect */
+.galleryimg:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------- LIGHTBOX ------------------- */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 9999;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 6px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev, .next {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 20px;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    color: #ccc;
+}
+
+    </style>
+</head>
+<body>
+    <!-- IMAGE GALLERY -->
+<div class="mt-4 parent" id="image-gallery"></div>
+
+<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+  
+  <img id="lightbox-img" class="lightbox-img" />
+
+  <div class="lightbox-controls">
+    <span class="prev" onclick="prevImg()">&#10094;</span>
+    <span class="next" onclick="nextImg()">&#10095;</span>
+  </div>
+</div>
+<script>
+function getQueryParam(n) {
+  return new URLSearchParams(location.search).get(n);
+}
+
+/* lazy loading helper */
+function loadImage(img) {
+  const tempImg = new Image();
+  tempImg.src = img.dataset.src;
+  tempImg.onload = () => {
+    img.src = tempImg.src;
+    img.classList.add("loaded");
+  };
+}
+
+let galleryImages = [];
+let currentIndex = 0;
+
+/* lightbox */
+function openLightbox(index) {
+  currentIndex = index;
+  document.getElementById("lightbox-img").src = galleryImages[index];
+  document.getElementById("lightbox").style.display = "flex";
+}
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+function nextImg() {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  document.getElementById("lightbox-img").src = galleryImages[currentIndex];
+}
+function prevImg() {
+  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  document.getElementById("lightbox-img").src = galleryImages[currentIndex];
+}
+
+/* ---------------- SAFE RENDER ---------------- */
+async function render() {
+
+  const id = getQueryParam("id");
+  const res = await fetch("projects.json");
+  const data = await res.json();
+  const p = data.projects.find(x => x.id === id) || data.projects[0];
+
+  /* ---- SAFE UPDATE → only update if element exists ---- */
+
+  const titleEl = document.getElementById("project-title");
+  if (titleEl) titleEl.textContent = p.title;
+
+  const heroEl = document.getElementById("hero-img");
+  if (heroEl) heroEl.src = p.image;
+
+  const overviewEl = document.getElementById("overview");
+  if (overviewEl) overviewEl.textContent = p.overview;
+
+  const infoEl = document.getElementById("project-info");
+  if (infoEl) {
+    infoEl.innerHTML = `
+      <li><strong>Client:</strong> ${p.client || "—"}</li>
+      <li><strong>Location:</strong> ${p.location || "—"}</li>
+      <li><strong>Completed:</strong> ${p.completion || "—"}</li>
+    `;
+  }
+
+  /* GALLERY — this ALWAYS exists */
+  const gallery = document.getElementById("image-gallery");
+  if (gallery) {
+    galleryImages = p.additional_images?.length ? p.additional_images : [p.image];
+
+    gallery.innerHTML = galleryImages
+      .map((img, index) => `
+        <img 
+          data-src="${img}" 
+          class="galleryimg"
+          onclick="openLightbox(${index})"
+        />
+      `)
+      .join("");
+
+    document.querySelectorAll(".galleryimg").forEach(img => loadImage(img));
+  }
+
+  /* TANK INFO */
+  const tankEl = document.getElementById("tank-info");
+  if (tankEl && p.tank_info) {
+    tankEl.innerHTML = Object.entries(p.tank_info)
+      .map(([k, v]) => `<li>${v}</li>`)
+      .join("");
+  }
+
+  /* SCOPE */
+  const scopeEl = document.getElementById("scope");
+  const scopeData = p.scope_highlights || p.engineering_scope;
+  if (scopeEl && scopeData) {
+    scopeEl.innerHTML = scopeData
+      .map(item =>
+        typeof item === "string"
+          ? `<li>${item}</li>`
+          : `<li><strong>${item.title}</strong>
+               <ul>${item.details.map(d => `<li>${d}</li>`).join("")}</ul>
+             </li>`
+      )
+      .join("");
+  }
+
+  /* DELIVERABLES */
+  const delEl = document.getElementById("deliverables");
+  if (delEl && p.deliverables) {
+    delEl.innerHTML = p.deliverables.map(i => `<li>${i}</li>`).join("");
+  }
+
+  /* STANDARDS */
+  const stdEl = document.getElementById("standards");
+  if (stdEl && p.standards) {
+    stdEl.innerHTML = p.standards.map(i => `<li>${i}</li>`).join("");
+  }
+}
+
+render();
+</script>
+
+
+
+</body>
+</html>

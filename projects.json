@@ -1,0 +1,697 @@
+
+
+
+
+{
+  "projects": [
+    {
+      "id": "m13-d-681-2",
+
+      "title": "ENGINEERING PACKAGE FOR STRESS ANALYSIS & SHELL PLATE REPAIR. Engineering package for stress analysis & shell plate repair",
+      "client": "Saudi Aramco",
+
+
+      "image": "./images/project/bottomtank/tan.webp",
+
+      "additional_images": [
+        "./images/project/bottomtank/tan.webp",
+        "./images/project/bottomtank/tank.webp",
+        "./images/project/bottomtank/tanks.webp"
+      ],
+
+      "overview": "Engineering and technical package for rehabilitation of an API-650 water storage tank including repair of bottom plates, roof plates, roof structural members, and temporary support design.",
+
+      "tank_info": {
+        "capacity": "Capacity: 5202 m³",
+        "diameter": "Diameter: 21.3 meters",
+        "classification": "API 650 Above-Ground Water Storage Tank",
+        "roof_type": "Fixed Roof (Rafters, Rafter Ring, Center Support Column)",
+        "construction": "Carbon steel, above-ground atmospheric tank",
+        "service": "Industrial Water Storage"
+      },
+
+      "scope_highlights": [
+        {
+          "title": "Method of Statement",
+          "details": [
+            "Safety controls per Aramco GI and CSM",
+            "Work sequencing",
+            "Material handling",
+            "Inspection requirements",
+            "Coating and CP procedures",
+            "Hydrotesting plan"
+          ]
+        },
+        {
+          "title": "Structural Engineering",
+          "details": [
+            "Assessment of tank condition",
+            "Roof frame evaluation",
+            "Rafters & rafter ring analysis",
+            "Support column assessment",
+            "Bottom plate repair design",
+            "Feasibility checks"
+          ]
+        },
+        {
+          "title": "FEA Analysis (ANSYS Workbench)",
+          "details": [
+            "Shell stability evaluation",
+            "Temporary support performance",
+            "Roof deformation and stress study",
+            "Buckling analysis",
+            "Load path verification",
+            "Support interaction evaluation"
+          ]
+        },
+        {
+          "title": "Engineering Drawings",
+          "details": [
+            "Bottom plate repair layout",
+            "Roof plate replacement drawings",
+            "Roof structural drawings",
+            "Temporary support drawings",
+            "Shell D-section cutting layout",
+            "Welding details",
+            "Inspection hold-point plan"
+          ]
+        },
+        {
+          "title": "Welding, NDT, Coating & CP",
+          "details": [
+            "WPS / PQR",
+            "NDT plan (VT, MT, UT, RT)",
+            "Coating (SAES-H-001)",
+            "CP (SAES-X-300/302/303)",
+            "QA/QC traceability & acceptance criteria"
+          ]
+        },
+        {
+          "title": "Temporary Support Design",
+          "details": [
+            "External shell supports",
+            "Internal vertical supports",
+            "Inclined supports",
+            "Roof lifting supports",
+            "FEA verification for all stages"
+          ]
+        },
+        {
+          "title": "Repair Sequencing",
+          "details": [
+            "Bottom plate replacement sequence",
+            "Roof plate cutting & replacement",
+            "Shell stability management",
+            "Weld sequencing to minimize distortion",
+            "Safe access planning"
+          ]
+        },
+        {
+          "title": "Hydrotesting & Commissioning",
+          "details": [
+            "Hydrotest fill plan",
+            "Pressure monitoring",
+            "Settlement monitoring",
+            "Acceptance criteria per API 650/653",
+            "Final inspection guidelines"
+          ]
+        }
+      ],
+
+      "deliverables": [
+        "Method of Statement (MOS)",
+        "Engineering drawings",
+        "Structural calculations",
+        "FEA reports",
+        "Welding/NDT/Coating/CP procedures",
+        "Hydrotest plan",
+        "Commissioning plan",
+        "Full Aramco compliance documentation"
+      ],
+
+      "standards": [
+        "SAES",
+        "SAMSS",
+        "API 650",
+        "API 653",
+        "ASME",
+        "Aramco GI"
+      ]
+    },
+       {
+      "id": "m13-d-681-1",
+
+      "title": "Method of Statement for Repair of Bottom, Roof Plates & Roof Structure for Tank M13-D-681-2",
+      "client": "Saudi Aramco",
+      "location": "",
+      "completion": "",
+
+      "image": "/images/project/sulphuric/storage.png",
+
+      "additional_images": [
+        "/images/project/sulphuric/storagetank.png",
+        "/images/project/sulphuric/storage.png",
+        "/images/project/sulphuric/tanks.png"
+      ],
+
+      "overview": "Engineering and technical package for rehabilitation of an API-650 water storage tank including repair of bottom plates, roof plates, roof structural members, and temporary support design. All documentation followed SAES, API 650/653, ASME and Aramco GI requirements.",
+
+      "tank_info": {
+        "capacity": "Capacity: 5,202 m³",
+        "diameter": "Diameter: 21.3 meters",
+        "standard": "Tank Standard: API-650 Welded Steel Tank",
+        "service": "Service: Industrial Water Storage",
+        "roof_type": "Roof Type: Fixed Roof with Rafters, Rafter Ring, Center Support",
+        "construction": "Construction: Carbon Steel Above-Ground Atmospheric Tank",
+        "required_engineering": "Required Engineering: Bottom, Roof Plate, Roof Frame & Structural Rehabilitation"
+      },
+
+      "scope_highlights": [
+        {
+          "title": "Method of Statement (MOS) Development",
+          "details": [
+            "Repair methodology for bottom, roof and structural components",
+            "Safety controls per Aramco GI & CSM",
+            "Material handling and work sequencing",
+            "Coating & CP procedures",
+            "Hydrotesting plan"
+          ]
+        },
+        {
+          "title": "Structural Engineering & Design Review",
+          "details": [
+            "Tank condition assessment",
+            "Roof frame & rafter analysis",
+            "Support column evaluation",
+            "Bottom plate repair strategy",
+            "Site feasibility validation"
+          ]
+        },
+        {
+          "title": "Finite Element Analysis (FEA) – ANSYS",
+          "details": [
+            "Shell stability evaluation",
+            "Temporary support performance verification",
+            "Stress & deformation study",
+            "Buckling analysis",
+            "Load-path verification"
+          ]
+        },
+        {
+          "title": "Engineering Drawings & Technical Detailing",
+          "details": [
+            "Bottom repair layout",
+            "Roof plate replacement drawings",
+            "Roof structural drawings",
+            "Temporary support drawings",
+            "Shell D-section cutting",
+            "Welding and inspection plans"
+          ]
+        },
+        {
+          "title": "Welding, NDT, Coating & CP Engineering",
+          "details": [
+            "WPS / PQR documentation",
+            "NDT plan (VT, MT, UT, RT)",
+            "Coating per SAES-H-001",
+            "CP per SAES-X-300/302/303",
+            "QA/QC traceability & acceptance criteria"
+          ]
+        },
+        {
+          "title": "Temporary Support Design & Verification",
+          "details": [
+            "External shell supports",
+            "Internal vertical supports",
+            "Inclined supports",
+            "Roof lifting supports",
+            "FEA-verified stability for all stages"
+          ]
+        },
+        {
+          "title": "Repair Sequencing & Execution Engineering",
+          "details": [
+            "Bottom plate replacement sequence",
+            "Roof plate cutting & replacement",
+            "Shell stability management",
+            "Weld sequencing to reduce distortion",
+            "Safe access engineering"
+          ]
+        },
+        {
+          "title": "Hydrotesting & Commissioning Engineering",
+          "details": [
+            "Hydrotest fill plan",
+            "Pressure & settlement monitoring",
+            "API 650/653 acceptance criteria",
+            "Final inspection guidelines"
+          ]
+        },
+        {
+          "title": "Aramco-Compliant Submission Package",
+          "details": [
+            "MOS documentation",
+            "Engineering drawings",
+            "Structural calculations",
+            "FEA reports",
+            "Welding/NDT/Coating/CP procedures",
+            "Hydrotest & commissioning plan"
+          ]
+        }
+      ],
+
+      "deliverables": [
+        "Method of Statement (MOS)",
+        "Engineering drawings",
+        "Structural calculations",
+        "FEA reports",
+        "Welding/NDT/Coating/CP procedures",
+        "Hydrotest plan",
+        "Commissioning plan",
+        "Full Aramco compliance documentation"
+      ],
+
+      "standards": [
+        "SAES",
+        "API 650",
+        "API 653",
+        "ASME",
+        "Aramco GI",
+        "SAMSS"
+      ]
+    },
+     {
+      "id": "fj40-chassis",
+
+      "title": "Reverse Engineering & Structural Analysis of Toyota FJ40 Chassis",
+      "client": "",
+      "location": "",
+      "completion": "",
+
+      "image": "/images/project/chase/tan.webp",
+
+      "additional_images": [
+        "/images/project/chase/tans.webp",
+        "/images/project/chase/tans2.webp",
+        "/images/project/chase/tans3.webp",
+        "/images/project/chase/tans4.webp"
+      ],
+
+      "overview": "Full reverse-engineering and structural analysis of the Toyota Land Cruiser FJ40 chassis. Project included high-accuracy 3D scanning, CAD reconstruction, structural FEA, and engineering recommendations for improving strength, durability, and performance during restoration or custom builds.",
+
+      "tank_info": {},
+
+      "scope_highlights": [
+        {
+          "title": "Complete Reverse Engineering of Chassis",
+          "details": [
+            "High-resolution 3D scanning of the original FJ40 frame",
+            "Full CAD reconstruction of chassis geometry",
+            "Accurate dimensions for fabrication & manufacturing",
+            "Production-ready 3D model for restoration, engine swaps, and off-road upgrades"
+          ]
+        },
+        {
+          "title": "Structural Evaluation & FEA Simulation",
+          "details": [
+            "Chassis stiffness assessment",
+            "Load-carrying behavior evaluation",
+            "Stress distribution under off-road and powertrain loads",
+            "Vibration characteristics study",
+            "Thermal loading analysis near engine/exhaust zones"
+          ]
+        },
+        {
+          "title": "Engineering Reinforcement Recommendations",
+          "details": [
+            "Identification of strengthening points",
+            "Gusset and bracket recommendations",
+            "Cross-member optimization",
+            "Improved powertrain & suspension mounting strategies"
+          ]
+        }
+      ],
+
+      "deliverables": [
+        "Complete CAD model of FJ40 chassis",
+        "FEA stress and deformation reports",
+        "Engineering reinforcement recommendations",
+        "Manufacturing-ready geometry",
+        "Reconstruction accuracy report"
+      ],
+
+      "standards": [
+        "Automotive CAD Design Standards",
+        "General FEA Best Practices",
+        "Off-road structural performance guidelines"
+      ],
+
+      "why_clients_choose_us": [
+        "Professional reverse engineering expertise",
+        "Advanced automotive structural engineering capability",
+        "Accurate 3D scanning & CAD modeling",
+        "High-quality simulation and analysis",
+        "On-time delivery and reliable support"
+      ],
+
+      "short_version": "Reverse engineering & structural FEA of the FJ40 chassis including 3D scanning, CAD reconstruction, and reinforcement recommendations for restorations and custom builds."
+    },
+      {
+      "id": "j60-d-0711",
+
+      "title": "Advanced Engineering Design Package – Vacuum Residue Storage Tank (J60-D-0711)",
+      "client": "Saudi Aramco",
+      "location": "",
+      "completion": "",
+
+      "image": "/images/project/reverse/tans.webp",
+
+      "additional_images": [
+        "/images/project/reverse/tans2.webp",
+        "/images/project/reverse/tans3.webp",
+        "/images/project/reverse/tans4.webp"
+      ],
+
+      "overview": "Complete mechanical design, structural analysis, venting calculations, and drawing review for the Vacuum Residue Storage Tank J60-D-0711. Includes API 650 verification, API-2000 venting, STAAD analysis, wind/seismic design, and full Aramco engineering support.",
+
+      "tank_info": {
+        "tank_type": "Fixed Vertical Welded Storage Tank",
+        "roof_type": "Dome Roof – Rafter Supported",
+        "service": "Vacuum Residue",
+        "diameter": "24 m",
+        "height": "22 m",
+        "design_code": "API 650 – Appendix E, F, M",
+        "venting_code": "API 2000 – Free & Emergency Venting",
+        "seismic_wind": "ASCE 7, SAES-A-112"
+      },
+
+      "scope_highlights": [
+        {
+          "title": "API 650 Design Calculations",
+          "details": [
+            "Shell thickness design (1-foot method)",
+            "Annular plate & bottom plate sizing",
+            "Cleanout door evaluation",
+            "Roof plate & compression ring design",
+            "Wind girder check & stability validation",
+            "Seismic anchorage & overturning analysis",
+            "Material stress & corrosion allowance evaluation",
+            "Hydrotest load condition calculations"
+          ]
+        },
+        {
+          "title": "Roof Structure Analysis",
+          "details": [
+            "STAAD Pro structural analysis of dome roof & rafters",
+            "Rafter spacing & deflection (L/240) checks",
+            "Roof plate spanning evaluation",
+            "Internal pressure, vacuum & wind uplift validation",
+            "Live load & operational load combinations",
+            "Compliance with AISC-360 (ASD) & API 650 App-F",
+            "Walkway, platform & nozzle load integration"
+          ]
+        },
+        {
+          "title": "API-2000 Venting Calculations",
+          "details": [
+            "Free vent sizing for filling/emptying cycles",
+            "Thermal venting for sudden temperature changes",
+            "Vacuum relief calculation",
+            "Fire case emergency vent sizing",
+            "Required SCFH / m³/hr vent capacity determination",
+            "Vent type selection: Gooseneck / Flame Arrestor / Combination"
+          ]
+        },
+        {
+          "title": "Drawing Review & Engineering Support",
+          "details": [
+            "General arrangement & nozzle orientation review",
+            "Shell course layout, roof layout & bottom layout",
+            "Structural roof drawings (CS-13138-18-14)",
+            "Anchor bolt & foundation interface verification",
+            "Walkway, platform & access structure review"
+          ]
+        },
+        {
+          "title": "Aramco Standard Compliance",
+          "details": [
+            "SAES-A-112 (Seismic Design)",
+            "SAES-B-006 (Tank Requirements)",
+            "SAES-J-600 (Materials & Welding)",
+            "32-SAMSS-005 (Tank Construction)",
+            "API 650 & API 2000 Compliance"
+          ]
+        }
+      ],
+
+      "deliverables": [
+        "API 650 structural design calculations",
+        "Dome roof STAAD analysis report",
+        "API-2000 venting report",
+        "Nozzle reinforcement calculations",
+        "Wind & seismic analysis report",
+        "Drawing review markup package",
+        "Final engineering design package for Aramco approval"
+      ],
+
+      "standards": [
+        "API 650",
+        "API 2000",
+        "AISC-360 (ASD)",
+        "ASCE 7",
+        "SAES-A-112",
+        "SAES-B-006",
+        "SAES-J-600",
+        "32-SAMSS-005"
+      ],
+
+      "why_clients_choose_us": [
+        "Proven capability in refinery-grade tank engineering",
+        "Strong expertise in API 650 / API 2000 / AISC structural design",
+        "Complete end-to-end engineering package delivery",
+        "Fast delivery with high technical accuracy",
+        "Experience with critical service storage tanks"
+      ],
+
+      "short_version": "Engineering package for Vacuum Residue Storage Tank J60-D-0711 including API 650 design, dome roof STAAD analysis, wind/seismic evaluation, API-2000 venting, and Aramco-compliant documentation."
+    },
+     {
+      "id": "multi-silo-system",
+
+      "title": "Multi-Silo Storage System Design, Structural Analysis & CFD Simulation",
+      "client": "Saudi Aramco",
+      "location": "Tanajib Pier Facilities Upgrade",
+      "completion": "",
+
+      "image": "/images/project/project/tans.webp",
+
+      "additional_images": [
+        "/images/project/project/tans2.webp",
+        "/images/project/project/tans3.webp",
+        "/images/project/project/tans4.webp",
+        "/images/project/project/tans5.webp"
+      ],
+
+      "overview": "Complete engineering package for a multi-silo bulk material storage system at Tanajib Pier Facilities Upgrade. Work scope includes mechanical design, structural analysis, seismic and wind evaluation, internal pressure study, and CFD simulations for pneumatic conveying and aeration systems, fully compliant with Saudi Aramco standards.",
+
+      "tank_info": {},
+
+      "scope_highlights": [
+        {
+          "title": "Structural Integrity Assessment of Silos",
+          "details": [
+            "FEA evaluation of silo shell, hopper, roof, and support frame",
+            "Load analysis for cement/barite storage",
+            "Stress and displacement checks under full/empty load cycles",
+            "Operating internal pressure validation through CFD"
+          ]
+        },
+        {
+          "title": "Seismic Load Analysis (ASCE 7)",
+          "details": [
+            "Full seismic performance calculations",
+            "Horizontal & vertical load combination evaluation",
+            "Dynamic response and vibration mode assessment",
+            "Verification of safe structural performance during seismic events"
+          ]
+        },
+        {
+          "title": "Wind Load Evaluation",
+          "details": [
+            "Wind load calculations per ASCE 7-05",
+            "Pressure distribution study",
+            "Frame load transfer modeling",
+            "Deformation checks within allowable limits"
+          ]
+        },
+        {
+          "title": "Deflection & Stability Analysis",
+          "details": [
+            "Local & global deformation checks",
+            "Drift limits validation for combined loads",
+            "Compliance with AISC deflection criteria"
+          ]
+        },
+        {
+          "title": "CFD Simulation – Pneumatic Conveying System",
+          "details": [
+            "Pressure field simulation along conveying pipeline",
+            "Pressure drop and flow velocity analysis",
+            "Verification of uniform and stable conveying behavior"
+          ]
+        },
+        {
+          "title": "CFD Simulation – Aeration Pad Air System",
+          "details": [
+            "Pressure and velocity distribution simulation",
+            "Flow balancing to ensure uniform aeration",
+            "Confirming safe & optimized aeration pressure"
+          ]
+        },
+        {
+          "title": "Mechanical & Structural Detailing",
+          "details": [
+            "General arrangements for silos and support structures",
+            "Fabrication drawings for shell, platforms, stairs, ladders",
+            "Anchor bolt plans and structural steel connections",
+            "Pneumatic conveying & electrical rack layout",
+            "BOM & MTO documentation"
+          ]
+        }
+      ],
+
+      "deliverables": [
+        "Complete multi-silo 3D model",
+        "Structural FEA results & reports",
+        "CFD flow simulations for conveying & aeration",
+        "Seismic & wind load calculation reports",
+        "GA drawings, fabrication drawings & layout plans",
+        "Full Aramco-compliant engineering package"
+      ],
+
+      "standards": [
+        "ASCE 7 (Seismic & Wind Load)",
+        "AISC Structural Design",
+        "Saudi Aramco Engineering Standards (SAES)",
+        "Industry CFD Analysis Standards",
+        "Industrial Silo Structural Guidelines"
+      ],
+
+      "short_version": "Structural and CFD analysis of a multi-silo industrial storage system with seismic, wind, and pressure evaluation. Complete mechanical design, 3D modeling, and fabrication drawings meeting Aramco standards."
+    },
+     {
+      "id": "wet-batching-plant",
+
+      "title": "Wet Concrete Batching Plant Engineering (120–500 m³/hr)",
+      "client": "",
+      "location": "",
+      "completion": "",
+
+      "image": "/images/project/projects/tans.webp",
+
+      "additional_images": [
+        "/images/project/projects/tans2.webp",
+        "/images/project/projects/tans3.webp",
+        "/images/project/projects/tans4.webp"
+      ],
+
+      "overview": "Complete mechanical, structural, and process engineering package for a high-capacity Wet Concrete Batching Plant designed to produce 120–500 m³/hr. Includes multi-silo storage, aggregate hoppers, mixing tower, conveyors, bucket elevator, dosing systems, and fabrication-ready detailing.",
+
+      "tank_info": {},
+
+      "scope_highlights": [
+        {
+          "title": "Process & Production Engineering",
+          "details": [
+            "Process flow development for wet batching operations",
+            "Optimized dosing for water, cement, aggregates, chemicals, micro-silica",
+            "Cycle time optimization for 120–500 m³/hr production",
+            "Designed for loader and truck feeding systems"
+          ]
+        },
+        {
+          "title": "Mechanical Design – Major Systems",
+          "details": [
+            "Cement & micro-silica silos with pneumatic filling",
+            "Multi-chamber aggregate hopper with loader feeding",
+            "High-capacity mixing tower with full weighing system",
+            "Conveyors: screw conveyors, bucket elevator, weighing conveyor (600 mm)",
+            "Hopper discharge chutes & mixer feed hoppers"
+          ]
+        },
+        {
+          "title": "Structural Engineering",
+          "details": [
+            "Full steel structure as per AISC 360 & ASCE 7",
+            "Silo support structures, tower frame & access systems",
+            "Wind, dynamic & live load structural checks",
+            "Hot-dip galvanizing for corrosion protection",
+            "Anchor bolt layouts & steel connection design"
+          ]
+        },
+        {
+          "title": "GA & 3D BIM Model",
+          "details": [
+            "Complete 3D integrated plant model",
+            "Plan, elevation & sectional GA drawings",
+            "Isometric presentation for coordination",
+            "Civil layout for trucks & loaders"
+          ]
+        },
+        {
+          "title": "Fabrication Drawings & Detailing",
+          "details": [
+            "Silo plate development & fabrication",
+            "Hopper reinforcement drawings",
+            "Ladder, staircase & handrail detailing",
+            "Beam-column structural detailing",
+            "Screw conveyor & bucket elevator fabrication",
+            "Complete BOM & MTO"
+          ]
+        },
+        {
+          "title": "Electrical & Control Integration",
+          "details": [
+            "Control room layout & panel support",
+            "Cable routing provisions",
+            "Instrumentation & automation interface",
+            "Valves, sensors & load cell integration"
+          ]
+        },
+        {
+          "title": "Safety & Operational Engineering",
+          "details": [
+            "Access platforms with guardrails & toe plates",
+            "Industrial-safe ladder & staircase design",
+            "Dust control & noise reduction measures",
+            "Emergency access & safe maintenance features"
+          ]
+        }
+      ],
+
+      "deliverables": [
+        "Complete 3D BIM model",
+        "Mechanical design package",
+        "Structural design & analysis reports",
+        "Fabrication drawings (silos, hoppers, tower, conveyors)",
+        "Electrical/Control integration support",
+        "BOM & MTO documentation",
+        "Turnkey engineering package from concept to manufacturing"
+      ],
+
+      "standards": [
+        "AISC 360",
+        "ASCE 7",
+        "AWS Welding Standards",
+        "ISO Industrial Safety Standards",
+        "General Mechanical Design Standards"
+      ],
+
+      "short_version": "High-capacity Wet Batching Plant (120–500 m³/hr) with multi-silo storage, mixing tower, conveyors, bucket elevator, and automated weighing systems. Delivered with full mechanical, structural, 3D modeling, and fabrication design package."
+    }
+  ]
+}
+
+ 
+  
+
